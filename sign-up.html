@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">  
+    <script type="text/javascript" src="js/main.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <title>Signup | Manny</title>
+    <style>
+        .signup{
+            display: flex;
+            margin:0 auto;
+            padding:0;
+            width:40%;  
+            background-image: url("assets/sg2.png");
+        } 
+        .login-left{ 
+            width:60%;            
+            margin:0;
+            padding:0; 
+        }
+        .login-left img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .signup-contain{
+            width:80%; 
+            margin:1% auto; 
+            padding:3rem 0;  
+            text-align: center;  
+        } 
+        .signup-contain h6{ 
+            color:#fff;
+            font-weight: 200;
+            margin:1rem;
+            padding:0;
+        }
+        .signup-contain button{ 
+            border-radius:3px; 
+            color: #ff0066;
+            border: none;
+            width:100%; 
+            padding:.2rem; 
+            background-color: #fff;  
+            box-shadow: 2px 2px 5px 2px rgba(155, 150, 150, 0.6)
+        }
+        .signup-container{
+            display: flex;                      
+            height: 90vh;
+        }
+        h1{
+            text-align: left;
+            color: #fff;
+            line-height: 1;
+            font-size: 2.5rem;
+        }
+        h3{
+            text-align: left;
+            color: #fff;
+            line-height: 0; 
+            font-size: 1.5rem;
+        }
+        h5{
+            text-align: left;
+            color:#fff;
+            margin-top:3rem;
+        }
+        input{
+            display:inline-block;
+            border: none;
+            outline:none;
+            background-color:#ad0029;
+            float:left;
+            width:40%;
+            outline:none;
+            font-size: 12px;
+            color:rgb(177, 151, 151);
+            text-align: left;
+            margin-right:2rem;
+            margin-bottom:1rem;
+            border-bottom: 1px solid #ccc;
+            box-shadow:2px rgba(155, 150, 150, 0.6); 
+        }
+        .input{
+            width:100%;
+            text-align: left;  
+            font-size: 10px;
+            line-height: -1;
+            border:0;
+        }
+        @media screen and (max-width: 840px) { 
+            .signup-container{
+                flex-direction: column;
+                height:100%;
+            }
+            .signup, .login-left{
+                width:100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="assets/logo.png" alt="logo" style="width:60px;"></a>
+        <div class = "top-right">
+            <a href="about.html">About</a>
+            <a href="pricing.html">Pricing</a>
+            <div class="dropdown">
+                    <button class="dropbtn">Login/Signout
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                        <div class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="sign-up.html">Sign Up</a> 
+                        </div>
+            </div>  
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>  
+ <div class ="signup-container">
+     <div class = "signup">
+        <div class = "signup-contain">
+                <h1>Enjoy the largest</h1>
+                <h3>collection of African Images</h3>
+                <h5>Signup</h5>
+                <input type="text" placeholder="First Name"/>
+                <input type="text" placeholder="Last NAme"/>
+                <input type="text" placeholder="User Name"/>
+                <input type="text" placeholder="Email"/>
+                <input type="text" placeholder="Password"/> 
+                <p class="input"><input type = 'checkbox' checked>Subscribe to our news letter</input></p>
+                <button>Signup</button>
+                <h6>or Login with</h6>
+                <img src="assets/log2.png" alt="logo" style="width:40%; height:30px;">
+                <h6>Don't have an account yet? <span style="color:blue;">Join</span></h6>
+        </div>
+     </div>
+     <div class ="login-left">
+        <img src ="assets/sg1.png"/>
+     </div>
+</div>
+</body>
+</html>

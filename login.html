@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">  
+    <script type="text/javascript" src="js/main.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <title>Login | Manny</title>
+    <style> 
+        .login-contain{
+            width:55%; 
+            margin:1% auto;
+            padding:3rem 0;  
+            text-align: center; 
+        }
+        .login-contain input{
+            display:block;
+            border: none;
+            outline:none;
+            width:100%;
+            font-size: 16px;
+            color:rgb(218, 211, 211);
+            text-align: left;
+            border-bottom: 2px solid #ccc;
+            box-shadow:2px rgba(155, 150, 150, 0.6);
+            margin-top:4rem; 
+        }
+        .login-contain button{ 
+            border-radius:7px; 
+            color: white; 
+            border: none;
+            width:100%; 
+            padding:.8rem; 
+            background-color: #ff0066; 
+            margin: 3rem 0 .6rem 0;
+            box-shadow: 5px 5px 10px 5px rgba(155, 150, 150, 0.6)
+        }
+        @media screen and (max-width: 840px) { 
+            .login{
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="topnav" id="myTopnav">
+                <div class = "top-right">
+                    <a href="about.html">About</a>
+                    <a href="pricing.html">Pricing</a>
+                    <div class="dropdown">
+                            <button class="dropbtn">Login/Signout
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                                <div class="dropdown-content">
+                                <a href="login.html">Login</a>
+                                <a href="sign-up.html">Sign Up</a> 
+                                </div>
+                    </div>  
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div> 
+        <div class = "login-contain">            
+                <a href="index.html"><img src="assets/log1.png" alt="logo" style="width:60px;"></a>
+                <input type="text" placeholder="Email Address/Username"/> 
+                <input type="text" placeholder="Password"/> 
+                <button>Login</button>
+                <h6>or Login with</h6>
+                <img src="assets/log2.png" alt="logo" style="width:25%; height:30px;">
+                <h6>Don't have an account yet? <span style="color:blue;">Join</span></h6>
+        </div>
+</body>
+</html>

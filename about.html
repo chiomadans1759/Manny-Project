@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">  
+    <script type="text/javascript" src="js/main.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <title>About Us | Manny</title>
+    <style>
+        .login{
+            display: flex;
+            margin:0 auto;
+            padding:0;            
+            height: 90vh;
+        }
+        .login-right {
+            width:50%;           
+            margin:0;
+            padding:0;
+        }
+        .contain{
+            width:80%; 
+            margin:15% auto;
+            padding:3rem 0; 
+        }
+        .contain h2{
+            font-size:3rem;
+            color:#000; 
+            margin-top:3rem;
+            line-height: 0px;
+        }
+        .contain p{
+            font-size:.9rem;
+            color:rgb(70, 67, 67); 
+            line-height: 1.3;
+        }
+        .login-right button{ 
+            border-radius:2px; 
+            color: white; 
+            border: none;
+            padding: .5rem 5rem;
+            background-color: #ff0066; 
+            margin-top: .6rem;
+            box-shadow: 5px 5px 10px 5px rgba(155, 150, 150, 0.6)
+        }
+        .login-left{ 
+            width:50%;            
+            margin:0;
+            padding:0; 
+        }
+        .login-left img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        @media screen and (max-width: 840px) { 
+            .login{
+                flex-direction: column;
+            }
+            .login-right, .login-left{
+                width:100%;
+            }
+            .contain h2{
+                font-size:2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="topnav" id="myTopnav">
+                <a href="index.html"><img src="assets/logo.png" alt="logo" style="width:60px;"></a>
+                <div class = "top-right">
+                    <a href="about.html">About</a>
+                    <a href="pricing.html">Pricing</a>
+                    <div class="dropdown">
+                            <button class="dropbtn">Login/Signout
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                                <div class="dropdown-content">
+                                <a href="login.html">Login</a>
+                                <a href="sign-up.html">Sign Up</a> 
+                                </div>
+                    </div>  
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div> 
+<div class = "login">
+     <div class = "login-right">
+        <div class ="contain">
+            <h2>We are African</h2>
+            <p>Paste some dummy lopsum ipsum test here Paste some dummy lopsum ipsum test here Paste some dummy lopsum ipsum test here 
+                    Paste some dummy lopsum ipsum test herePaste some dummy lopsum ipsum test herePaste some dummy lopsum ipsum test here
+                    Paste some dummy lopsum ipsum test herePaste some dummy lopsum ipsum test herePaste some dummy lopsum ipsum test here
+            </p>
+            <button>Explore Images</button>
+        </div>
+     </div>
+     <div class ="login-left">
+        <img src ="assets/a1.png"/>
+     </div>
+</div>
+</body>
+</html>

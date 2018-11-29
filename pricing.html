@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">  
+    <script type="text/javascript" src="js/main.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <title>Pricing | Manny</title>
+    <style>
+        .bg{
+            background-image: url("assets/p1.png");
+            width:100%;
+            height:100%; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;            
+            text-align: center;
+        }
+        .p1{
+            color:#fff;
+            font-size: 2.5rem;
+            display:block;
+            border:0; 
+            border-bottom:1px solid #ccc;
+            width:20%;
+            margin:2rem auto;
+        }
+        .pricing-flex{
+            display:flex;
+            width:80%; 
+            height:60%; 
+            margin:1rem auto;
+            justify-content: space-between;
+            align-items:flex-end;
+        }
+        .pricing-flex > div {
+            width: 26%;
+            background-color: #fff;
+            margin:0 2rem; 
+        }
+       .bg button{ 
+            border-radius:3px; 
+            color: white; 
+            border: none;
+            width:80%; 
+            padding:.3rem; 
+            background-color: #ff0066; 
+            margin: 2rem 0 1rem 0;
+            box-shadow: 2px 2px 4px 2px rgba(155, 150, 150, 0.6)
+        }
+        .flex1{
+            height:80%;
+            border-radius: 3px;
+        }
+        .flex2{
+            height:90%;            
+            border-radius: 3px;
+        }
+        .p2{
+            display:block;
+            border: none;
+            outline:none;
+            font-size: 16px;
+            color:rgb(102, 95, 95);
+            text-align:center;
+            border-bottom: 2px solid #ccc;
+            box-shadow:2px 4px 2px rgba(155, 150, 150, 0.6); 
+        }
+        .p3{
+            font-size: 1.8rem;
+            line-height:.6;
+        }
+        p{
+            font-size:12px;
+        }
+        @media screen and (max-width: 840px) { 
+            .pricing-flex{
+                flex-direction: column;
+                height:100%;
+                width:60%;
+            }
+            .pricing-flex > div {
+            width: 80%; 
+            margin:1rem 2rem; 
+        }
+        .p1{ 
+            width:60%; 
+        }
+        }
+    </style>
+</head>
+<body> 
+        <div class="topnav" id="myTopnav">
+                <a href="index.html"><img src="assets/logo.png" alt="logo" style="width:60px;"></a>
+                <div class = "top-right">
+                    <a href="about.html">About</a>
+                    <a href="pricing.html">Pricing</a>
+                    <div class="dropdown">
+                            <button class="dropbtn">Login/Signout
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                                <div class="dropdown-content">
+                                    <a href="login.html">Login</a>
+                                    <a href="sign-up.html">Sign Up</a> 
+                                </div>
+                    </div>  
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div> 
+        <div class = "bg">
+            <p class ="p1">Select a plan</p>
+            <div class = "pricing-flex">
+                <div class = "flex1">
+                    <p class ="p2">Unlimited</p>
+                    <p class ="p3">30k <br/><span style="font-size: 12px; color:rgb(92, 88, 88);">/month</span></p>
+                    <p>Unlimited Downloads</p>
+                    <p>Access premium files</p>
+                    <p>Get exclusive updates</p>
+                    <button>Select plan</button>
+                </div>
+                <div class = "flex2" id = 'Flex2'>
+                        <p class ="p2">Regular</p>
+                        <p class ="p3">10k <br/><span style="font-size: 12px; color:rgb(92, 88, 88);">/month</span></p>
+                        <p>Unlimited Downloads</p>
+                        <p>Access premium files</p>
+                        <p>Get exclusive updates</p>
+                        <button>Select plan</button>
+                </div>
+                <div class = "flex1">
+                        <p class ="p2">Exclusive</p>
+                        <p class ="p3">70k <br/><span style="font-size: 12px; color:rgb(92, 88, 88);">/month</span></p>
+                        <p>Unlimited Downloads</p>
+                        <p>Access premium files</p>
+                        <p>Get exclusive updates</p>
+                        <button>Select plan</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

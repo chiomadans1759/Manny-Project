@@ -1,0 +1,235 @@
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  padding:.5rem 5rem; 
+} 
+.topnav img{ 
+    width:80px; 
+  }
+.top-right a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 14px;
+} 
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left; 
+}
+.top-right{
+    float:right;  
+}
+.dropdown .dropbtn {   
+    border: none;
+    border-radius:5px;
+    outline: none;
+    color: white; 
+    padding: .5rem 1rem;
+    background-color: #ff0066;
+    font-family: inherit;
+    margin-top: .6rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.hero-image { 
+    background: url("./../assets/hero-image.jpg");
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+  }
+  .hero-image h1{
+    font-size:7rem; 
+  }
+  .hero-text{
+    font-size:2rem;
+    line-height:0;
+    color:#fff;    
+    position:absolute;
+    top:35%;
+    left:37%;
+  }
+  .container{
+    display:flex;
+    flex-direction: column;
+  } 
+  .search{
+    border-bottom:3px solid #ccc;
+  }
+  .search button {
+    border: none;
+    border-radius:5px;
+    outline: 0;
+    width:50%; 
+    padding: .7rem 4rem;  
+    margin:1rem 22%;  
+    color: #7c7878;
+    background-color: #ddd;
+    text-align: left;
+    cursor: pointer;
+    font-size:20px;
+  }
+  
+  .search button:hover {
+    background-color: #555;
+    color: white;
+  }
+  .grid-container{
+    width:90%; 
+    display:flex; 
+    flex-direction: column;
+    margin:0 auto; 
+  }
+  .join-ember{
+    display: flex;
+    width:100%;     
+    height: 6rem;
+    justify-content: space-between; 
+    margin:1rem 0;
+  }
+  .first { 
+    width:70%;
+  }
+  .first img{
+    height: 100%;
+    width:100%;
+    opacity:.6; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+  }
+  .second { 
+    width:25%;
+    border:1px solid #300818;    
+    font-size:40px; 
+  }
+  .second span{
+    font-size:12px; 
+  }
+  .fa-camera-retro{
+    width:30%;
+    height:100%;
+    padding:1rem;
+  }
+  .grid{ 
+   display: grid;
+    grid-auto-columns: repeat(11, 1fr);
+    grid-template-areas: 
+    "c1 c1 c1 c2 c2 c2 c2 c2 c3 c3 c3"
+    "c4 c4 c4 c4 c4 c5 c5 c5 c5 c5 c5" 
+    "c6 c6 c7 c7 c7 c7 c7 c8 c8 c8 c8";
+    grid-gap: 15px
+    
+  }
+  
+  .grid > *{ 
+      width:100%;
+      height:300px
+  }
+  .grid img{  
+     width: 100%;
+     height:100%;
+     object-fit:fill;
+     
+     
+
+
+  }
+   #grid1{
+       grid-area:c1;
+       border:1px solid green
+    }
+    #grid2{
+    grid-area:c2;
+    border:1px solid white
+    }
+    #grid3{
+    grid-area:c3;
+    border:1px solid yellow
+    }
+    #grid4{
+    grid-area:c4;
+    }
+    #grid5{
+    grid-area:c5;
+    }
+    #grid6{
+    grid-area:c6;
+    }
+    #grid7{
+    grid-area:c7;
+    }
+    #grid8{
+    grid-area:c8;
+    }
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .top-right {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} 
